@@ -12,11 +12,30 @@ A typical model deployment pipeline in production scale usually involves steps b
 2. Export your model to a frozen graph, which can be .pb for tensorflow or .onnx for pytorch.
 3. Convert the frozen graph from step2
 
-## Getting Started
+## Supported inference engines:
 
-# TODO
+- Native Tensorflow
+- Native Tensorflow-keras
+- Tensorflow Lite
+- Onnx Runtime
+- Openvino - Tensorrt
 
-## Running the tests
+## Usage
 
-Explain how to run the automated tests for this system
+1. frozen your model and convert to specific IR
+
+```
+# tf_graph_tookit.py provides helpful function for exporting your model and convert it to IR
+```
+
+2. Just try out your desired Inference engine
+
+```
+model_dir = '' # your converted IR
+ie = SomeIE(model_dir, *args, **kwars)
+input_data = None
+result = ie.predict(None)
+```
+
+
 
