@@ -18,14 +18,17 @@ A typical model deployment pipeline in production scale usually involves steps b
 - Native Tensorflow-keras
 - Tensorflow Lite
 - Onnx Runtime
-- Openvino - Tensorrt
+- Openvino 
+- Tensorrt
+- MNN (TODO)
+- NCNN (TODO)
 
 ## Usage
 
 1. frozen your model and convert to specific IR
 
 ```
-# tf_graph_tookit.py provides helpful function for exporting your model and convert it to IR
+# tf_graph_tookit.py/converter.py provide helpful functions for exporting your model and convert it to IR
 ```
 
 2. Just try out your desired Inference engine
