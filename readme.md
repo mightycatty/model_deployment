@@ -16,12 +16,12 @@ A typical model deployment pipeline in production scale usually involves steps b
 
 - Native Tensorflow
 - Native Tensorflow-keras
-- Tensorflow Lite
-- Onnx Runtime
-- Openvino 
-- Tensorrt
-- MNN (TODO)
-- NCNN (TODO)
+- [Tensorflow Lite](https://www.tensorflow.org/lite)
+- [Onnx Runtime](https://github.com/microsoft/onnxruntime)
+- [Openvino](https://software.intel.com/en-us/openvino-toolkit) 
+- [Tensorrt](https://developer.nvidia.com/tensorrt)
+- [MNN](https://github.com/alibaba/MNN) (TODO)
+- [NCNN](https://github.com/Tencent/ncnn) (TODO)
 
 ## Usage
 
