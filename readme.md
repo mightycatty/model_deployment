@@ -1,14 +1,14 @@
 # Model Deployment
 
-Scrips for try out or deploy your models with different deeplearning inference engines.
+Scrips for trying out or deploying your models with different deeplearning inference engines.
 
 ## Typical Model Deployment Pipeline
 
-Folks in Lab often evaluate mode in extract the same environment they trained it which is fast and requires little effort. However, this is not appropriate for efficient production deployment. 
+Folks in Lab often evaluate model in extract the same environment they trained it which is fast and requires little effort but not appropriate for efficient production deployment. 
 
 A typical model deployment pipeline in production scale usually involves steps bellows:
 
-1. Training your model with your favorite deeplearning frameworks (tensorflow/pytorch/caffe)
+1. Train your model with your favorite deeplearning frameworks (tensorflow/pytorch/caffe)
 2. Export your model to a frozen graph, which can be .pb for tensorflow or .onnx for pytorch.
 3. Convert the frozen graph from step2
 
@@ -25,7 +25,7 @@ A typical model deployment pipeline in production scale usually involves steps b
 
 ## Usage
 
-1. frozen your model and convert to specific IR
+1. freeze your model and convert it to specific IR
 
 ```
 # tf_graph_tookit.py/converter.py provide helpful functions for exporting your model and convert it to IR
